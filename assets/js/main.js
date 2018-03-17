@@ -32,7 +32,7 @@ function startTime() {
         
         if (hours >= 4 && hours <= 6) {
         
-            document.body.background = "assets/img/night.jpg";
+            document.body.background = "assets/img/nigh.jpg";
             document.getElementById("greeting").innerHTML = "Good night,";
             document.getElementById("mijnKlok").style.color = "white";
             
@@ -40,7 +40,7 @@ function startTime() {
     }
         if ( hours >= 7 && hours <= 12) {
         
-            document.body.background = "assets/img/morning2.jpg";
+            document.body.background = "assets/img/mornin.jpg";
             document.getElementById("greeting").innerHTML = "Good morning,";
             document.getElementById("mijnKlok").style.color = "white";
             
@@ -49,7 +49,7 @@ function startTime() {
 
         if (hours >= 13 && hours <= 17) {
         
-            document.body.background = "assets/img/day2.jpg";
+            document.body.background = "assets/img/da.jpg";
             document.getElementById("greeting").innerHTML = "Good day,";
             document.getElementById("mijnKlok").style.color = "white";
             
