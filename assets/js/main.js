@@ -40,7 +40,7 @@ function startTime() {
     }
         if ( hours >= 7 && hours <= 12) {
         
-            document.body.background = "assets/img/mornin.jpg";
+            document.body.background = "assets/img/morning2.jpg";
             document.getElementById("greeting").innerHTML = "Good morning,";
             document.getElementById("mijnKlok").style.color = "white";
             
