@@ -82,10 +82,10 @@ var timeline = new TimelineMax({repeat : -1});
 
 
 //tweenmax code for animation voorbeeld van deb
-var moonAnimate = document.getElementById('moon');
-TweenMax.to (moonAnimate, 10, {
-    left: 400,
-});
+// var moonAnimate = document.getElementById('moon');
+// TweenMax.to (moonAnimate, 10, {
+//     left: 400,
+// });
 
 // var startTime = 0;
 // var timeline = new TimelineMax({repeat : -1});
