@@ -1,0 +1,154 @@
+body {
+	font-family: sans-serif;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+	background-attachment:fixed;
+	overflow: hidden;
+
+}
+.container {
+	text-align: center;
+	height: 100%;
+}
+
+p {
+	display: inline-block;
+	margin: 5px;
+}
+
+.flex-container {
+	display:flex;
+	margin-top: 150px;
+	flex-wrap: wrap;
+}
+
+.item {
+	display:block;
+	width: 100%;
+	 align-self: center;
+}
+#greeting {
+	font-size: 20px;
+	color: white;
+	position: relative;
+	
+}
+
+#moon {
+	position: relative;
+}
+
+#dagMaandJaar {
+	position: relative;
+	font-size: 20px;
+	color: white;
+
+}
+
+#mijnKlok {
+	font-size: 70px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+
+	color: white;
+	opacity: 0.9;
+	vertical-align: middle;
+}
+
+#sec {
+	font-size: 70px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	color: white;
+	opacity: 0.9;
+}
+
+@media only screen and (min-width: 400px) { 
+
+
+	#greeting {
+	font-size: 30px;
+
+}
+
+
+#dagMaandJaar {
+
+		font-size: 20px;
+
+}
+
+#mijnKlok {
+	font-size: 120px;
+
+}
+
+#sec {
+	font-size: 120px;
+
+}
+	
+}
+
+@media only screen and (min-width: 600px) { 
+		body {
+		background-size:cover;
+	}
+		#greeting {
+	font-size: 25px;
+	font-weight: 100;
+
+}
+
+
+
+#dagMaandJaar {
+		font-size: 25px;
+		font-weight: 100;
+
+}
+
+#mijnKlok {
+	font-size: 175px;
+
+}
+
+#sec {
+	font-size: 175px;
+
+}
+	
+}
+
+@media only screen and (min-width: 1200px) { 
+	#greeting {
+	font-size: 45px;
+
+}
+
+#moon {
+	position: relative;
+}
+
+#dagMaandJaar {
+
+		font-size: 30px;
+
+}
+
+#mijnKlok {
+	font-size: 200px;
+
+}
+
+#sec {
+	font-size: 200px;
+
+
+}
+	
+}
