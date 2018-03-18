@@ -27,7 +27,7 @@ function startTime() {
     document.getElementById('dayMonthYear').innerHTML = day + " " + dayNumber + " " + month + " " + year; // dag, dag in getal, maand en jaar
         
         // if hours om verschillende tijden met verschillende afbeeldingen en elementen te laten zien
-        if (hours >= 4 && hours <= 6) {
+        if (hours >= 2 && hours <= 6) {
         
             document.body.background = "assets/img/night.jpg";
             document.getElementById("greeting").innerHTML = "Good night,";
@@ -68,7 +68,7 @@ function startTime() {
         
     }
 
-    if (hours >= 18 && hours <= 23 || hours >= 0 && hours <= 3) {
+    if (hours >= 18 && hours <= 23 || hours >= 0 && hours <= 1) {
         document.body.background = "assets/img/evening.jpg";
         document.getElementById("greeting").innerHTML = "Good afternoon,"; // greeting
         document.getElementById("sun").style.display = "none";
@@ -96,20 +96,48 @@ var timeline = new TimelineMax({repeat : -1});
            timeline.from ('#sec', 0.5, { top: -10, ease: Bounce.easeOut})
             .to ('#sec', 0.5, { opacity: 0});  
 
-//tweenmax sun animatie
+// tweenmax sun animatie
 var sun = document.getElementById('sun');
 TweenMax.to (sun, 50, {
     left: '100%',
     repeat:-1,
     yoyo:true,
-    ease: Linear.easeNone,
+    ease: Linear.easeInOut,
+});
+
+var sunOpacity = document.getElementById('sun');
+TweenMax.to (sun, 1, {
+    opacity: 0.3,
+    repeat: -1,
+    ease: Linear.easeInOut,
+    yoyo: true,
+
 });
 
 //tweenmax moon animatie
 var moon = document.getElementById('moon');
 TweenMax.to (moon, 50, {
     left: '100%',
+    opacity: 0.3,
+    rotation: 360,
     repeat:-1,
     yoyo:true,
-    ease: Linear.easeNone,
+    ease: Linear.easeInOut,
+});
+
+var moonOpacity = document.getElementById('moon');
+TweenMax.to (moon, 1, {
+    opacity: 0.3,
+    repeat: -1,
+    ease: Linear.easeInOut,
+    yoyo: true,
+
+});
+
+var logo = document.getElementById('logo');
+TweenMax.to (logo, 5, {
+    opacity: 0.3,
+    yoyo:true,
+    repeat: -1,
+    ease: Linear.easeInOut,
 });

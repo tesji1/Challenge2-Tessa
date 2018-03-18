@@ -17,6 +17,19 @@ p {
 	margin: 5px;
 }
 
+header img {
+	width: 400px;
+}
+
+#logo {
+	opacity: 1;
+	position: relative;
+} 
+
+header {
+	text-align: center;
+}
+
 article:nth-child(1), article:nth-child(2) {
 	text-align: center;
 }
