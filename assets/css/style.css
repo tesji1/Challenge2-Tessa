@@ -2,13 +2,13 @@ body {
 	font-family: sans-serif;
 	background-repeat:no-repeat;
 	background-position:center center;
-
+	transition: background 3s ease;
 	background-attachment:fixed;
 	overflow: hidden;
 
 }
 .container {
-	text-align: center;
+	
 	height: 100%;
 }
 
@@ -16,6 +16,12 @@ p {
 	display: inline-block;
 	margin: 5px;
 }
+
+article:nth-child(1), article:nth-child(2) {
+	text-align: center;
+}
+
+
 
 .flex-container {
 	display:flex;
@@ -28,8 +34,9 @@ p {
 	width: 100%;
 	 align-self: center;
 }
+
 #greeting {
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
 	position: relative;
 	
@@ -37,21 +44,35 @@ p {
 
 #moon {
 	position: relative;
+	display: none;
 }
 
-#dagMaandJaar {
+#moon img {
+	width: 130px;
+	opacity: 0.8;
+}
+
+#sun {
+	position: relative;
+	display: none;
+}
+
+#sun img {
+	width: 80px;
+	opacity: 0.7;
+}
+
+#dayMonthYear {
 	position: relative;
 	font-size: 20px;
 	color: white;
-
 }
 
-#mijnKlok {
+#mineClock {
 	font-size: 70px;
 	text-align: center;
 	position: relative;
 	display: inline-block;
-
 	color: white;
 	opacity: 0.9;
 	vertical-align: middle;
@@ -76,51 +97,62 @@ p {
 }
 
 
-#dagMaandJaar {
+#dayMonthYear {
 
 		font-size: 20px;
 
 }
 
-#mijnKlok {
-	font-size: 120px;
+#mineClock {
+	font-size: 80px;
 
 }
 
 #sec {
-	font-size: 120px;
+	font-size: 80px;
 
 }
 	
 }
+
+
 
 @media only screen and (min-width: 600px) { 
 		body {
 		background-size:cover;
 	}
 		#greeting {
-	font-size: 25px;
+	font-size: 35px;
 	font-weight: 100;
 
 }
 
 
 
-#dagMaandJaar {
+#dayMonthYear {
 		font-size: 25px;
 		font-weight: 100;
 
 }
 
-#mijnKlok {
-	font-size: 175px;
+#mineClock {
+	font-size: 120px;
 
 }
 
 #sec {
-	font-size: 175px;
+	font-size: 120px;
 
 }
+}
+
+@media only screen and (min-width: 706px) { 
+	#mineClock {
+		font-size: 150px;
+	}
+	#sec {
+		font-size: 150px;
+	}
 	
 }
 
@@ -134,13 +166,13 @@ p {
 	position: relative;
 }
 
-#dagMaandJaar {
+#dayMonthYear {
 
 		font-size: 30px;
 
 }
 
-#mijnKlok {
+#mineClock {
 	font-size: 200px;
 
 }
