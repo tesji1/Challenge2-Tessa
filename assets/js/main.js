@@ -1,13 +1,11 @@
 
-
-
-    // var hours = today.getHours(); // om te testen van de tijden in het console
+    // var hours = today.getHours(); // om te testen van de tijden in het console en dan moet var hours in de function startTime in commands.
 function startTime() {
     var today = new Date();
     var monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var dayArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var hours = today.getHours();
-        var minutes = today.getMinutes();
+    var hours = today.getHours(); // variable voor uren
+    var minutes = today.getMinutes(); // variable voor minuten
     var seconds = today.getSeconds(); // variable voor seconden
     var day = dayArray[today.getDay()]; // variable voor de dagen pakt dagArray de juiste dag van vandaag
     var dayNumber = today.getDate(); // variable voor de dag in getal
@@ -26,62 +24,62 @@ function startTime() {
         // is het 2 uur of hoger laat dit zien // is het 6 uur of lager dit zien
     if (hours >= 2 && hours <= 6) {
         
-        document.body.background = "assets/img/night.jpg";
-        document.getElementById("greeting").innerHTML = "Good night,";
-        document.getElementById("sun").style.display = "none";
-        document.getElementById("moon").style.display = "initial";
-        document.getElementById("mineClock").style.color = "#fff";
-        document.getElementById("sec").style.color = "#fff";
-        document.getElementById("dayMonthYear").style.color = "#fff";
-        document.getElementById("greeting").style.color = "#fff";
+        document.body.background = "assets/img/night.jpg"; // achtergrond night.jpg wordt in de body getoont
+        document.getElementById("greeting").innerHTML = "Good night,"; // laat good night zien
+        document.getElementById("sun").style.display = "none"; // laat de sun animatie niet zien
+        document.getElementById("moon").style.display = "initial"; // laat de moon animatie zien 
+        document.getElementById("mineClock").style.color = "#fff"; // font kleur van de klok
+        document.getElementById("sec").style.color = "#fff"; // font kleur voor de seconden wordt wit getoont
+        document.getElementById("dayMonthYear").style.color = "#fff"; // font kleur van dag maand jaar wordt wit getoont
+        document.getElementById("greeting").style.color = "#fff"; // laat greeting in witte font zien
             
         
     }
         // is het 7.00 of hoger laat dit zien // is het 12 uur of lager laat dit zien
     if ( hours >= 7 && hours <= 12) {
     
-        document.body.background = "assets/img/morning3.jpg";
-        document.getElementById("greeting").innerHTML = "Good morning,";
-        document.getElementById("mineClock").style.color = "#745848";
-        document.getElementById("sec").style.color = "#745848";
-        document.getElementById("dayMonthYear").style.color = "#745848";
-        document.getElementById("greeting").style.color = "#745848";
-        document.getElementById("sun").style.display = "initial";
-        document.getElementById("moon").style.display = "none";
+        document.body.background = "assets/img/morning3.jpg"; // laat background morning3.jpg zien
+        document.getElementById("greeting").innerHTML = "Good morning,"; // laat good morning zien
+        document.getElementById("mineClock").style.color = "#745848"; // laat de font in een bruine kleur zien voor de klok
+        document.getElementById("sec").style.color = "#745848"; // laat de seconden in bruine font zien 
+        document.getElementById("dayMonthYear").style.color = "#745848"; // laat dag maand jaar in bruine font zien
+        document.getElementById("greeting").style.color = "#745848"; // laat greeting tekst in een bruine kleur zien
+        document.getElementById("sun").style.display = "initial"; // toont de zon animatie
+        document.getElementById("moon").style.display = "none"; // laat de moon animatie niet zien
             
         
     }
             // als het 13.00 uur is of hoger laat dit zien // is het 17.00 of lager laat dit zien
     if (hours >= 13 && hours <= 17) {
         
-        document.body.background = "assets/img/day2.jpg";
-        document.getElementById("greeting").innerHTML = "Good day,";
-        document.getElementById("sun").style.display = "initial";
-        document.getElementById("moon").style.display = "none";
-        document.getElementById("mineClock").style.color = "#fff";
-        document.getElementById("sec").style.color = "#fff";
-        document.getElementById("dayMonthYear").style.color = "#fff";
-        document.getElementById("greeting").style.color = "#fff";     
+        document.body.background = "assets/img/day2.jpg"; // laat de day2.jpg background zien
+        document.getElementById("greeting").innerHTML = "Good day,"; // laat de greeting good day zien
+        document.getElementById("sun").style.display = "initial"; // laat de zon anmiatie zien
+        document.getElementById("moon").style.display = "none"; // laat de moon animatie niet zien
+        document.getElementById("mineClock").style.color = "#fff"; // toont de font kleur van de klok in het wit
+        document.getElementById("sec").style.color = "#fff"; // toont de seconden van de font van de seconden wit
+        document.getElementById("dayMonthYear").style.color = "#fff"; // laat dag maand jaar in witte font zien
+        document.getElementById("greeting").style.color = "#fff";     // laat de greeting teskt good day in het wit zien
     }
     // is het 18.00 of 0.00 of hoger laat dit zien // is het 23 uur of 1.00 of lager laat dit zien
     if (hours >= 18 && hours <= 23 || hours >= 0 && hours <= 1) {
-        document.body.background = "assets/img/evening.jpg";
-        document.getElementById("greeting").innerHTML = "Good afternoon,"; // greeting
-        document.getElementById("sun").style.display = "none";
-        document.getElementById("moon").style.display = "initial";
-        document.getElementById("mineClock").style.color = "#fff";
-        document.getElementById("sec").style.color = "#fff";
-        document.getElementById("dayMonthYear").style.color = "#fff";
-        document.getElementById("greeting").style.color = "#fff";
+        document.body.background = "assets/img/evening.jpg"; // dat de evening background zien
+        document.getElementById("greeting").innerHTML = "Good afternoon,"; // greeting afternoon zien
+        document.getElementById("sun").style.display = "none"; // laat de zon animatie niet zien
+        document.getElementById("moon").style.display = "initial"; // laat de moon animatie zien
+        document.getElementById("mineClock").style.color = "#fff"; // toont de klok font in het wit
+        document.getElementById("sec").style.color = "#fff"; // toont de seconden font in het wit
+        document.getElementById("dayMonthYear").style.color = "#fff"; // toont de dag maand jaar in witte font
+        document.getElementById("greeting").style.color = "#fff"; // toont greeting tekst in witte font
     }
 
-}
+} // einde function startTime
 
 
 function checkTime(i) { // dit is voor wanneer het onder de 10 is dan zet het nog een 0 voor zodat er altijd 2 cijfers naast elkaar staan dus 00 ipv 0
     if (i < 10) {i = "0" + i};  // voegt een 0 toe bij < 10
     return i;
-}
+} // einde function checkTime
 
 
 

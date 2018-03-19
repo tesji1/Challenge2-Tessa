@@ -45,7 +45,7 @@ article:nth-child(1), article:nth-child(2) {
 .item {
 	display:block;
 	width: 100%;
-	 align-self: center;
+	align-self: center;
 }
 
 #greeting {
