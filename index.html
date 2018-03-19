@@ -3,25 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>klok voor mars </title>
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
-	
 </head>
-<body onload="startTime()">
-	<header>
-		<div id="logo"> <img src="assets/img/logo.png" alt="logo" > </div>
-	</header>
-	<div class="container">
-		<section class="flex-container">
-			<article class="item"> <div id="mineClock"></div><div id="sec"></div></article>
-			<article class="item"><p id="greeting"></p> <p id="dayMonthYear">  </p></article>
-			<article class="item"><div id="sun"> <img src="assets/img/sun.png" alt="sun" > </div></article>
-			<article class="item"><div id="moon"> <img src="assets/img/moon2.png" alt="moon" > </div></article>
-	</section>
-	</div>
-</body>
+	<body onload="startTime()">
+		<header> <!-- header -->
+			<div id="logo"> <img src="assets/img/logo.png" alt="logo" > </div> <!-- einde logo div-->
+		</header><!-- einde header -->
+		<div class="container"><!-- container -->
+			<section class="flex-container"><!-- flex-container start in de section -->
+				<article class="item"> <!-- item -->
+					<div id="mineClock"></div><!-- klok wordt hier in minuten en uren getoont -->
+					<div id="sec"></div><!-- seconden worden hier getoont -->
+				</article>
 
-<script type="text/javascript" src="assets/js/tweenmax.js"> </script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+				<article class="item"><!-- item -->
+					<p id="greeting"></p> <!-- greeting tekst -->
+					<p id="dayMonthYear"></p> <!-- dag maand jaar -->
+				</article><!-- einde item -->
+
+				<article class="item"><!-- item -->
+					<div id="sun"> <!-- sun div -->
+						<img src="assets/img/sun.png" alt="sun" > <!-- sun animatie -->
+					</div><!-- einde sun div -->
+				</article><!-- einde item -->
+
+				<article class="item"><!-- item -->
+					<div id="moon"> <!-- moon zit in deze div -->
+						<img src="assets/img/moon2.png" alt="moon" > <!-- moon animatie -->
+					</div> <!-- einde moon div -->
+				</article> <!-- einde item -->
+			</section> <!-- einde section flex-container -->
+		</div>
+	</body>
+
+<script type="text/javascript" src="assets/js/tweenmax.js"> </script> <!-- tweenmax.js -->
+<script type="text/javascript" src="assets/js/main.js"></script> <!-- main.js -->
 </html>
